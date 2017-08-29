@@ -48,6 +48,7 @@ def practice(inlet):
     q = cmath.sqrt((w/pf)**2  - w**2)
     r = q/i/i
     x = w/i/i
+    s = cmath.sqrt(w**2 + q**2)
 
     outlet['v'] = v
     outlet['w'] = w
@@ -56,6 +57,7 @@ def practice(inlet):
     outlet['q'] = q
     outlet['r'] = r
     outlet['x'] = x
+    outlet['s'] = s
 
     return outlet
 
@@ -83,4 +85,9 @@ if __name__ == '__main__':
         'r': 485,
         'l': 0.585,
         'c': 12e-6
+    }))
+    display('Pratica 4', practice({
+        'v': 200.1,
+        'w': 85,
+        'i': 0.563
     }))
