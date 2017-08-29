@@ -44,11 +44,18 @@ def practice(inlet):
     w = inlet['w']
     i = inlet['i']
 
-    # TODO Understand what W, S, P and Q are. This still is really fuzzy.
+    pf = w/v/i
+    q = cmath.sqrt((w/pf)**2  - w**2)
+    r = q/i/i
+    x = w/i/i
 
     outlet['v'] = v
     outlet['w'] = w
     outlet['i'] = i
+    outlet['pf'] = pf
+    outlet['q'] = q
+    outlet['r'] = r
+    outlet['x'] = x
 
     return outlet
 
