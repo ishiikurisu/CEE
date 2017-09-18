@@ -27,7 +27,7 @@ def q4(tr):
 def q5(tr):
     return (tr['n'] + (100 - tr['reg']))/2
 
-if __name__ == '__main__':
+def main():
     print("# Prova 1")
 
     s_nom = 112500
@@ -85,3 +85,6 @@ if __name__ == '__main__':
     tr_b['pt'] = q5(tr_b)
     print("Trafo A: pontuação = %.2f" % (tr_a['pt']))
     print("Trafo B: pontuação = %.2f" % (tr_b['pt']))
+
+if __name__ == '__main__':
+    main()
