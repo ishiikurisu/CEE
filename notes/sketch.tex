@@ -28,11 +28,26 @@ Aqui, eu deverei falar sobre os fundamentos que regem as contas que eu farei mai
 
 Falar sobre o fluxo de sangue pelo coração, indicando quanto sangue passa pelo coração e qual a potência mecânica necessária.
 
+O coração é um músculo cuja principal função é bombear sangue para as diversas partes do corpo. Para tanto, ele segue algumas "regras" para o sangue seja bem distribuído, tanto em questão de quantidade como de frequência. Na medicina, ele é conhecido por ser um músculo formado por células do tipo \textit{syncytium} (ou sincício em português), onde cada membrana nuclear cobre vários núcleos. Desta forma, uma excitação elétrica, por exemplo, se propaga rapidamente ao longo do órgão, haja visto a interconexão inerente de suas células. Isto é refletido em toda a estrutura elétromecânica do coração. Em termos estruturais, podemos dividir o coração em 4 partes: dois átrios e dois ventrículos. Os átrio e ventrículo do lado direito recebem sangue do corpo para bombear ao pulmão, enquanto os do lado esquerdo recebem sangue do coração para bombear para o corpo. Isto é necessário pois o sangue precisa estar rico em oxigênio, sendo o pulmão o órgão responsável por fazer este preparo químico. Desta forma, o coração precisa de um ritmo específico para trabalhar, e este ritmo pode ter sua velocidade aumentada ou diminuída dependendo de diversos estímulos externos.
+
+Os átrios são responsáveis por receber o sangue que chega ao coração. Eles funcionam como bombas mais fracas, e simplesmente bombeiam sangue ao ventrículo que, por sua vez, já funciona como uma bomba mais forte, que deve ser capaz de fazer pressão suficiente para empurrar o sangue distribuído tanto pelo pulmão como pelo resto corpo. Desta forma, é fácil ver que a parte direita do coração exerce menos pressão do que a parte esquerda, já que, como a circulação do pulmão é independente da do resto do corpo, ela requer que menos sangue passe por ela. Também é notável que, do ponto de vista de sistemas dinâmicos, o pulmão é um gargalo, pois ele não é capaz de processar todo o sangue do corpo de uma só vez. Isto é perceptível em todos aqueles que praticam exercício físico: a sensação de estar sem ar após a realização de exercícios pesados provém da incapacidade do coração de bombear sangue o suficiente pelo pulmão para distribuir oxigênio por todo o corpo. Sendo assim, é necessária a distinção entre circulação pulmonar e circulação sistêmica (ou periférica), haja visto suas peculiaridades inatas.
+
+Após sair do coração em direção à circulação sistêmica, o sangue passa pelas artérias (sendo a mais importante a artéria Aorta, a primeira artéria do coração e a que aguenta mais pressão), as vias de alta pressão. As artérias se dividem em arteríolas, que por sua vez se dividem em capilares. As vias capilares servem para distribuir o sangue dentro dos órgãos, para que haja a troca de nutrientes e substâncias necessárias para a manutenção do corpo humano. Após a realização das reações, o sangue volta à circulação das capilares pelas vênulas, que se juntam em veias, capazes de aguentar pressões maiores, permitindo um retorno mais rápido ao coração. O coração deve então bombear este sangue pelos pulmões, onde um caminho similar é percorrido: o sangue sai pela chamada \textit{vena cava} superior, passa pelos pulmões através da circulação capilar, e retorna ao coração pela chamada artéria \textit{cava}.
+
+Com isto em mente, o objetivo deste trabalho é dimensionar duas bombas capazes de bombear sangue intermitentemente, tanto para o pulmão como para a circulação sistêmica. Em termos mecânicos, podemos dimensionar estas bombas se baseando na pressão exercida sobre as artéria Aorta e \textit{vena cava} superior. Segundo Guyton et al. (1970s), que determinaram o chamado débito cardíaco (isto é, a diferença entre o tanto de sangue que chega ao coração e o quanto que sai), eles chegaram à conclusão de que o coração flui pela Aorta com uma velocidade de $F=33cm/s$ sob condições de repouso. Este valor de velocidade chega a se multiplicar por um fator de 8 quando o coração está sob exigência de mais nutrientes nas vias capilares. Voltando ao estado de repouso, os pesquisadores também foram capazes de medir a pressão exercida sob as paredes da Aorta, chegando a um máximo médio de $P_s=120mmHg$ para pressões sistólicas (exercidas para um único batimento) e $P_d=80mmHg$ para pressões diastólicas (o mínimo exercido entre dois batimentos). Estas pressões não mudam se o sujeito está sob repouso ou durante alguma atividade física.
+
+A saber, a prova de que o pulmão é um gargalo neste sistema vem das necessidades nutricionais impostas pelas vias capilares, que demandam 30 vezes o fluxo de sangue do coração quando em repouso. Contudo, o coração é mecanicamente incapaz de fornecere um fluxo maior do que no máximo 8 vezes (como explicado anteriormente).
+
 Falar sobre a fragilidade elétrica do coração.
 
 \section{Resultados}
 
 Aqui, eu deverei dimensionar o motor da bomba do coração, levando em conta os parâmetros descritos na introdução.
+
+Para este projeto, vamos considerar que o coração é formado por duas bombas, uma para circulação pulmonar e outra para circulação sistêmica. Sabendo que a circulação pulmonar demanda menos pressão que a periférica, podemos simplificar este problema levando em conta, na verdadem a potência necessária para alimentar duas artérias Aorta sob condições limite, no caso, quando o sujeito está em atividade física severa e estamos aplicando pressão sistólica sobre a artéria, requerindo assim 8 vezes o fluxo de sangue necessário para um indivíduo em repouso. Sendo assim, a potência necessária será, convertendo os valores para o \textit{SI},
+$$ P = F \cdot P_s = 42236.53 W $$
+
+A partir daqui, eu vou escolher um motor para a atividade e checar quanta potência elétrica deve ser necesária.
 
 \section{Conclusão}
 
@@ -40,6 +55,6 @@ Aqui, eu deverei falar sobre a possibilidade de se aplicar os resultados obtidos
 
 \section{Bibliografia}
 
-Basicamente, alguns artigos do IEEE. E este site: http://nano.eecs.berkeley.edu/research/eskin.html.
+Basicamente, alguns artigos do IEEE. E este site: http://nano.eecs.berkeley.edu/research/eskin.html. E o livro do guyton.
 
 \end{document}
