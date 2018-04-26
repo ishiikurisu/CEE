@@ -10,7 +10,8 @@
 \begin{document}
 
 \title{Modelagem teórica de um gerador elétrico para instalações pluviais}
-\author{Cristiano Silva Júnior: 13/0070629}
+\author{Cristiano Silva Júnior: 13/0070629 \\
+Rafael Costa: 13/0144908}
 \date{\today}
 \maketitle
 
@@ -40,19 +41,29 @@ aplicáveis à proposta.
 
 \subsection{Redes pluviais}
 
-% TODO Descrever os parâmetros medíveis de uma rede de esgoto.
+Suponha um encanamento preenchido com água sendo bombeada a uma vazão $A$ e a uma pressão $D$. A partir disto, o objetivo deste projeto é avaliar se um gerador acoplado a este encanamento consegue extrair uma potência mecânica razoável o suficiente para ser utilizado comercialmente.
 
-% TODO Descrever a rede pluvial de Brasília.
+% TODO Adicionar uma figura que exemplique o procedimento a seguir.
 
-% TODO Descrever a rede pluvial de uma cidade do interior.
+Por definição, a potência transferida $P$ ao gerador será proporcional ao torque $T$ gerado e à velocidade angular $\omega$. Sendo assim, precisamos descobrir qual o torque e qual a velocidade angular que o encanamento com os parâmetros fornecidos consegue fornecer ao gerador.
+
+A fim de simplificar a análise, vamos supor que o regime de ?? é uniforme e, portanto, que o perfil de velocidade do fluído dentro do cano obedece uma lei quadrática. Consideraremos a geometria do rotor do gerador como sendo uma similar à do projeto X [4]. Como parâmetros construtivos, consideraremos que a turbina do gerador possui um raio $ r $ e que ele possui uma eficiência $ \eta $.
+
+Utilizando a definição de torque e de pressão, é fácil ver que $$ T = F A r $$ Analogamente, podemos utilizar a definição de velocidade angular para ver que $$ \omega = V(r) r $$ Portanto, a potência será $$ P = F A V(r) r^2 $$
 
 \subsection{Máquinas elétricas}
 
 % TODO Descobrir qual a máquina elétrica que é cabível aqui.
 
+\section{Resultados}
+
+Para obter os resultados, utilizamos como referência a Estação de Tratamento de Água Vale do Amanhecer, que abastece a região de mesmo nome. A vazão média de 29 L/s foi obtida no site da CAESB [3] e a altitude da estação em relação à região abastecida, de aproximadamente 40 metros, foi obtida utilizando um mapa topográfico.
+
+
+
 \section{Conclusão}
 
-Para escrever a conclusão, ainda preciso fazer contas para saber o que é
+Para escrever a conclusão, ainda precisamos fazer contas para saber o que é
 possível ou não.
 
 \section{Referência Bibliográfica}
@@ -61,6 +72,8 @@ possível ou não.
     \item Problemas ambientais relacionados à geração tradicional de energia
     elétrica
     \item Custos na geração de energia elétrica
+    \item http://atlascaesb.maps.arcgis.com/apps/MapJournal/index.html?appid=4d06131962ca482a9d51502c630e195f
+    \item Geometria do gerador (Lucid Energy?)
 \end{enumerate}
 
 \end{document}
